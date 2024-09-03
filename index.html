@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .video {
+            background: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: calc(30% - 20px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a esta trinchera improvisada</h1>
+</header>
+
+<div class="container">
+    <h2>Galería de Videos</h2>
+    <div class="video-gallery">
+        <!-- Aquí puedes agregar tus videos -->
+        <div class="video">
+            <h3>Título del Video</h3>
+            <video width="100%" controls>
+                <source src="video/Sara.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <br>
+            <video width="100%" controls>
+                <source src="video/miguel2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <br>
+            <video width="100%" controls>
+                <source src="video/danubis.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <!-- Repite el bloque anterior para más videos -->
+    </div>
+
+    <h2>Sube tu Video</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Subir Video</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Dobo Coding Co. LTD - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
